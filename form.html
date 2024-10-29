@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="one.css">
+    <!--<link href="/dist/tailwind.css" rel="stylesheet">-->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+    <title>Registration Form</title>
+</head>
+<body class="back">
+
+    <form action="" method="get" id="form">
+        <table class="table">
+            <tr>
+                <td class="data" colspan="2"><h1 class="heading">Registration Form</h1></td>
+            </tr>
+            <tr>
+                <td class="data"><label class="label" for="name">Name</label></td>
+                <td class="data"><input class="input" type="text" id="name" name="name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td class="data"><label class="label" for="email">Email</label></td>
+                <td class="data"><input class="input" type="email" id="email" name="email" placeholder="Enter your email" required></td>
+            </tr>
+            <tr>
+                <td class="data"><label class="label" for="password">Password</label></td>
+                <td class="data"><input class="input" type="password" id="password" name="password" placeholder="Enter your password" required></td>
+            </tr>
+            <tr>
+                <td class="data"><label class="label" for="dob">Date-of-birth</label></td>
+                <td class="data"><input class="input" type="date" id="dob" name="dob" placeholder="dd/mm/yyyy" required></td>
+                <td class="date"><span id="dob-error"></span></td>
+            </tr>
+            <tr>
+                <td class="data"><label class="label" for="terms">Terms & conditions</label></td>
+                <td class="data"><input class="input" type="checkbox" id="terms" name="terms"></td>
+                
+            </tr>
+            <tr>
+                <td class="data"><button class="button" type="submit">Submit</button></td>
+            </tr>
+        
+        </table>
+    </form>
+    <div class="relative bg-white px-6 mt-5 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:rounded-lg sm:px-10">
+        <div class="mx-auto">
+            <h2 class="text-3xl text-center font-bold leading-tight">Entries</h2>
+            <div class="divide-y divide-gray-300/50 " id="user-entries"></div>
+        </div>
+    </div>
+
+
+    <script src="form.js"></script>
+    
+</body>
+</html>

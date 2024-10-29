@@ -1,0 +1,55 @@
+
+.input, textarea, .button {
+    display: block;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+.input{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border:none;
+}
+.table{
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; /*centers the table*/
+    border-collapse: collapse; /*removes space between table cells*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
+    background-color: white;
+}
+.data{
+    padding: 10px;
+    margin: 5px;
+    vertical-align: top;
+}
+.button{
+    background-color: rgb(34, 202, 34);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.heading{
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+/* Center the h1 and span across all columns (optional) */
+.data[colspan="2"] {
+    text-align: center; /* Ensure the h1 is centered inside the full-width cell */
+}
+/*modifying the input of name*/
+.input #name:invalid:focus{
+    border: 1px solid red;
+}
